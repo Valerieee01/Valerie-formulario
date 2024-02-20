@@ -20,26 +20,68 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sint amet vero debitis! Incidunt, maiores! Nesciunt
         veritatis ab quisquam doloremque ullam perspiciatis adipisci dolorum tempore delectus placeat! Voluptatem, velit
         ex.</p>
-    <form action="" method="get">
-        <label for="nombre">Nombre: </label>
-        <input type="text" name="nombre" id="nombre" placeholder="Escriba aquí">
+    <fieldset>
+        <legend>Formulario: </legend>
+        <div>
+            <form action="" method="get" autocomplete="on" autocapitalize="">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escriba aquí" required minlength="8">
+        </div>
         <br><br>
-        <label for="correo">Correo: </label>
-        <input type="email" name="correo" id="correo" placeholder="Escriba aquí">
+        <div>
+            <label for="correo">Correo: </label>
+            <input type="email" name="correo" id="correo" placeholder="Escriba aquí" required required minlength="8">
+        </div>
         <br><br>
-        <label for="Edad">Edad: </label>
-        <input type="number" name="Edad" id="Edad" placeholder="Escriba aquí">
+        <div>
+            <label for="Edad">Edad: </label>
+            <input type="number" name="Edad" id="Edad" placeholder="Escriba aquí" required required minlength="8">
+        </div>
         <br><br>
-        <label for="fecha">fecha: </label>
-        <input type="date" name="fecha" id="fecha" placeholder="Escriba aquí">
+        <div>
+            <label for="fecha">fecha: </label>
+            <input type="date" name="fecha" id="fecha" placeholder="Escriba aquí" required required minlength="8">
+        </div>
         <br><br>
-        <label for="descripción">descripción: </label>
-        <input type="text" name="descripción" id="descripción" placeholder="Escriba aquí">
+        <div>
+            <label for="descripción">descripción: </label>
+            <input type="text" name="descripción" id="descripción" placeholder="Escriba aquí" required required
+                minlength="8">
+        </div>
         <br><br>
-        <label for="observacion">Observación: </label>
-        <textarea name="observacion" id="observacion" cols="30" rows="10" placeholder="Escriba aquí"></textarea>
+        <div>
+            <label for="observacion">Observación: </label>
+            <textarea name="observacion" id="observacion" cols="30" rows="10" placeholder="Escriba aquí" required
+                required minlength="8"></textarea>
+        </div>
         <br><br>
-        <input type="submit" value="ENVIAR">
-    </form>
+        <div>
+            <h4>Genero</h4>
+            <label for="maculino">Masculino: </label>
+            <input type="radio" name="genero" id="maculino" value="masculino">
+            <label for="femenino">Femenino: </label>
+            <input type="radio" name="genero" id="femenino" value="femenino">
+            <label for="Otro">Otro: </label>
+            <input type="radio" name="genero" id="Otros" value="Otros">
+        </div>
+        <br><br>
+        <div>
+            <label for="archivo">Seleccione archivo:</label>
+            <input type="file" name="" id="" accept="image/*" multiple>
+            <br><br>
+        </div>
+        <div>
+            <h3>Comida</h3>
+            <label for="hamburguesa">Hamburguesa: </label>
+            <input type="checkbox" name="hamburguesa" id="Comida">
+            <label for="Perro:">Perro: </label>
+            <input type="checkbox" name="Perro:" id="Comida">
+            <br><br>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </fieldset>
 </body>
+
 </html>
