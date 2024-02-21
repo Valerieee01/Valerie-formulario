@@ -26,12 +26,12 @@
       <div>
         <label for="nombre">Nombre: </label>
         <input type="text" name="nombre" id="nombre" placeholder="Escriba aquí" minlength="3" required
-          pattern="[a-zA-Z]+" title="Solo letras">
+          pattern="[A-Za-z, ]+" title="Solo letras">
       </div>
       <br><br>
       <div>
         <label for="correo">Correo: </label>
-        <input type="email" name="correo" id="correo" placeholder="Escriba aquí" required required minlength="8">
+        <input type="email" name="correo" id="correo" placeholder="Escriba aquí" required minlength="8">
       </div>
       <br><br>
       <div>
@@ -74,7 +74,7 @@
       <div>
         <h4>Genero</h4>
         <label for="maculino">Masculino: </label>
-        <input type="radio" name="genero" id="maculino" value="masculino">
+        <input type="radio" name="genero" id="maculino" value="masculino" required>
         <label for="femenino">Femenino: </label>
         <input type="radio" name="genero" id="femenino" value="femenino">
         <label for="Otro">Otro: </label>
@@ -83,15 +83,15 @@
       <br><br>
       <div>
         <label for="archivo">Seleccione archivo:</label>
-        <input type="file" name="" id="" accept="image/*" multiple>
+        <input type="file" name="" id="" accept="image/*" multiple required>
         <br><br>
       </div>
       <div>
         <h3>Comida</h3>
         <label for="hamburguesa">Hamburguesa: </label>
-        <input type="checkbox" name="comida" id="Comida" value="Hamburguesa">
+        <input type="checkbox" name="hamburguesa" id="Comida">
         <label for="Perro:">Perro: </label>
-        <input type="checkbox" name="comida" id="Comida" value="Perro">
+        <input type="checkbox" name="perro" id="Comida">
         <br><br>
       </div>
       <div>
